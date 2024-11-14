@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.wrapper{
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 336px;
+}
+
+.box{
+    padding: 16px 28px;
+}
+
+.header{
+    background-color: #FFDC40;
+    height: 28px;
+}
+
+.title{
+    text-align: center;
+    font-size: 28px;
+}
+
+.content{
+    outline: none;
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+.content:focus{
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.tasks{
+    border:  1px solid #C4C4C4;
+    border-radius: 10px;
+    display: grid;
+    margin: 10px 0 20px;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 30px;
+}
+
+.remove{
+    width: 22px;
+    height: 22px;
+    background-image: url(./assets/x.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.remove:hover{
+    background-image: url(./assets/x_active.png);
+}
+
+.add-box{
+    display: flex;
+    justify-content: center;
+}
+
+.add{
+    background-color: #9953F1;
+    color: white;
+    width: 150px;
+    padding: 12px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.add:hover .plus{
+    background-color: #9953F1;
+}
+
+.add:hover{
+    background-color: #833AE0;
+}
+
+.add .plus{
+    background-color: #AA68FE;
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1/1;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add .text{
+    margin-left: 12px;
+}
+
+.sort {
+    width: 25px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sort.inc{
+    background-image: url(./assets/inc.png);
+}
+
+.sort.inc:hover, .sort.inc.active{
+    background-image: url(./assets/inc_active.png);
+}
+
+.sort.dec{
+    background-image: url(./assets/dec.png);
+}
+
+.sort.dec:hover, .sort.dec.active{
+    background-image: url(./assets/dec_active.png);
+}
+
+.sort-box{
+    padding: 25px 0 5px;
+    display: flex;
+    justify-content: end;
+}
